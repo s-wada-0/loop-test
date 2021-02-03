@@ -1,0 +1,30 @@
+div.pagebody{
+    background: #eee;
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    top: 0px;
+    left: 0px;
+}
+
+#canvas {
+    width: 640px;
+    height: 480px;
+    top: 100px;
+    left: 0px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+}
+
+#back-ground-image{
+    top: 100px;
+    left: 0px;
+    position: absolute;
+}
+
+#demo-video{
+    width: 640px;
+    top: 100px;
+    left: 0px;
+    position: absolute;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Canvas Test</title>
+  <link rel="stylesheet" href="loop-test.css" />
+  <script type="text/javascript" src="/eel.js"></script>
+</head>
+<body>
+
+    <div class="pagebody">
+        <h1>Canvas Test</h1>
+        <!--
+        <img id="back-ground-image" src="image/background.png" alt="back groung image"> 
+        -->
+        <video id="demo-video" src="./video/demo_movie.mp4" controls></video>
+        <canvas id="canvas" width="640px" height="480px"></canvas>
+        
+        <button onclick="playing();">start!</button>
+        <!--
+        <button onclick="pauseVideo();">pause video</button>
+        <button onclick="getCurrentTime();">time</button>
+        -->
+
+    </div>
+
+    <script src="loop-test.js"></script>
+    <script>
+      //eel.expose(getCurrentTime);
+    </script>
+</body>
+</html>
