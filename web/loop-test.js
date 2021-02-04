@@ -57,7 +57,7 @@ function drawMatchRate(val){
 
 function drawStickFig(val){
 
-    for(var i=0;i<13;i++){
+    for(var i=0;i<14;i++){
         if(val[i][0]>=0 && val[i][1]>=0){
             ctx.beginPath();
             ctx.arc(val[i][0], val[i][1], 10, 0, Math.PI*2, false);
@@ -65,30 +65,24 @@ function drawStickFig(val){
         }
     }
 
-    //ryou kata no juusin
-    if(val[1][0]>=0 && val[4][0]>=0 && val[1][1]>=0 && val[4][1]>=0){
-        var juusin = [(val[1][0]+val[4][0])/2, (val[1][1]+val[4][1])/2];
-    }else{
-        var juusin = [-1,-1];
-    }
-
-    drawLine(val[0], juusin);
-    drawLine(val[1], val[4]);
+    drawLine(val[0], val[13]);
+    drawLine(val[1], val[13]);
+    drawLine(val[4], val[13]);
     drawLine(val[1], val[2]);
     drawLine(val[2], val[3]);
     drawLine(val[4], val[5]);
     drawLine(val[5], val[6]);
-    drawLine(juusin, val[7]);
+    drawLine(val[13], val[7]);
     drawLine(val[7], val[8]);
     drawLine(val[8], val[9]);
-    drawLine(juusin, val[10]);
+    drawLine(val[13], val[10]);
     drawLine(val[10], val[11]);
     drawLine(val[11], val[12]);
 
 }
 
 function drawLine(p1, p2){
-    if(p1[0]<0 || p1[1]<0 || p2[0]<0 || p2[1]<0){
+    if(p1[0]<0 || p2[0]<0){
         return false;
     }
     ctx.beginPath();
