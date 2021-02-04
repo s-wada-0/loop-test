@@ -8,8 +8,8 @@ div.pagebody{
 }
 
 #canvas {
-    width: 640px;
-    height: 480px;
+    width: 1280px;
+    height: 800px;
     top: 100px;
     left: 0px;
     position: absolute;
@@ -23,7 +23,7 @@ div.pagebody{
 }
 
 #demo-video{
-    width: 640px;
+    width: 1280px;
     top: 100px;
     left: 0px;
     position: absolute;
